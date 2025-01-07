@@ -1,0 +1,4 @@
+name = "gemini"
+main = "src/worker.mjs"
+compatibility_date = "2025-01-07"
+compatibility_flags = [ "nodejs_compat" ]
