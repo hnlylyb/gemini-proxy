@@ -4,15 +4,13 @@ export default {
     let targetURL = new URL('https://generativelanguage.googleapis.com')
   
     targetURL.pathname = url.pathname
-    console.log(targetURL.pathname)
     targetURL.search = url.search
-    console.log(targetURL.search)
-
   
     let newRequest = new Request(targetURL, {
       method: request.method,
       headers: request.headers,
-      body: request.body
+      body: request.body,
+      duplex: 'full'
     })
   
     let response = await fetch(newRequest)
