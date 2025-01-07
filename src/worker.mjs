@@ -10,7 +10,7 @@ export default {
       method: request.method,
       headers: request.headers,
       body: request.body,
-      duplex: 'full'
+      duplex: true
     })
   
     let response = await fetch(newRequest)
